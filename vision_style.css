@@ -1,0 +1,127 @@
+/* Fonts */
+@font-face{
+  font-family: 'Share Tech Regular';
+  src: url('font/ShareTech-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  src: url('font/IBMPlexSerif-MediumItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Background and body */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Regular', sans-serif;
+}
+
+.bg {
+  background-image: url('images/bgdblue.jpeg');
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
+}
+
+/* Navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  background-color: #4c7a9b;
+  z-index: 6;
+  overflow: hidden;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:first-child { float: left; }
+#navbar a:hover { background-color: #f3cb38; color: black; }
+#navbar a.active { background-color: #453f65; color: white; }
+
+/* Page title */
+.title {
+  margin: 80px auto 40px auto;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+/* cutout letters */
+.letter {
+  display: inline-block;
+  width: 80px;
+  margin: 4px;
+  vertical-align: middle;
+}
+
+.letter:nth-child(1) { transform: rotate(-5deg); }
+.letter:nth-child(2) { transform: rotate(4deg); }
+.letter:nth-child(3) { transform: rotate(-3deg); }
+.letter:nth-child(4) { transform: rotate(6deg); }
+.letter:nth-child(5) { transform: rotate(-4deg); }
+.letter:nth-child(6) { transform: rotate(3deg); }
+
+/* Vision container */
+#vision-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  margin-top: -80px;
+  background-color: rgba(195, 215, 233, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  gap: 30px;
+}
+
+/* Text */
+.vision-text {
+  flex: 2;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Images */
+.vision-images {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vision-images img {
+  width: 80%;
+  border-radius: 8px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* Bottom navbar */
+#bottom-navbar {
+  position: relative;
+  width: 100%;
+  background-color: #4c7a9b;
+  padding: 10px 20px;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+#bottom-navbar img { height: 60px; }

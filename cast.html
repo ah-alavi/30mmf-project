@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cast</title>
+  <link rel="stylesheet" href="cast_style.css">
+  <script src="slideshow.js" async></script>
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg"></div>
+
+  <!-- Top navigation bar -->
+  <div id="navbar">
+      <a href="index.html">HOME</a>
+      <a href="vision.html">VISION</a>
+      <a href="cast.html" class="active">CAST</a>
+      <a href="about.html">ABOUT</a>
+      <a href="watch.html">WATCH</a>
+  </div>
+
+  <!-- Cutout Letters -->
+  <div class="title">
+      <img src="images/fbC.png" class="letter" alt="C">
+      <img src="images/fbA.png" class="letter" alt="A">
+      <img src="images/fbS.png" class="letter" alt="S">
+      <img src="images/fbT.png" class="letter" alt="T">
+  </div>
+
+  <!-- Slideshow  -->
+   <!--Credit to W3School for slideshow tutorial-->
+<div class="slideshow-container">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+  <div class="slide-wrapper">
+      <div class="mySlides">
+          <img src="images/areeba.png" alt="Areeba">
+          <div class="caption">AREEBA ALAVI</div>
+          <div class="caption">Areeba is an Interactive Media major with a big enthusiasm for the arts. She's always trying to make new things, and loves experimenting with styles. An avid perfectionist, you'll usually find her hunched over adding that final touch to her projects to make sure they're just flawless.</div>
+      </div>
+
+      <div class="mySlides">
+          <img src="images/anika.png" alt="Anika">
+          <div class="caption">ANIKA TAHSIN</div>
+          <div class="caption">Anika is a Computer Science major at NYUAD. She's always trying to willing to take on a challenge, and gives her 100% to any situation. Secretly a huge nerd, she's up for talking about anything and everything.</div>
+      </div>
+
+      <div class="mySlides">
+          <img src="images/jihee.png" alt="Jihee">
+          <div class="caption">JIHEE KANG</div>
+          <div class="caption">Jihee is a freshman at NYUAD. She intends to major in psychology, and is interested in taking Interactive Media as a minor. She likes hiking, biking, photography, listening to music, and swimming in her free time.</div>
+      </div>
+  </div>
+
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- navigation dots -->
+<div class="dots-container" style="text-align:center;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+    <!-- navbar -->
+    <div id="bottom-navbar">
+        <a href="https://nyuad.nyu.edu/en/">
+        <img src="images/logo.png" alt="Bottom Navbar Logo">
+        </a>
+    </div>
+
+</body>
+</html>
